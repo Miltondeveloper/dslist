@@ -1,6 +1,6 @@
 package com.devsuperior.dslist.dto;
 
-import com.devsuperior.dslist.entities.Games;
+import com.devsuperior.dslist.entities.Game;
 
 public class GameMinDTO {
 
@@ -14,7 +14,7 @@ public class GameMinDTO {
 		
 	}
 
-	public GameMinDTO(Games entity) {
+	public GameMinDTO(Game entity) {
 		id = entity.getId();
 		title = entity.getTitle();
 		year = entity.getYear();

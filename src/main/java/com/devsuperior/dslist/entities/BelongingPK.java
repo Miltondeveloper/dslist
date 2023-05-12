@@ -11,7 +11,7 @@ public class BelongingPK {
 
 	@ManyToOne
 	@JoinColumn(name = "game_id")
-	private Games game;
+	private Game game;
 	
 	@ManyToOne
 	@JoinColumn(name = "list_id")
@@ -21,16 +21,16 @@ public class BelongingPK {
 		
 	}
 
-	public BelongingPK(Games game, GameList list) {
+	public BelongingPK(Game game, GameList list) {
 		this.game = game;
 		this.list = list;
 	}
 
-	public Games getGame() {
+	public Game getGame() {
 		return game;
 	}
 
-	public void setGame(Games game) {
+	public void setGame(Game game) {
 		this.game = game;
 	}
 
